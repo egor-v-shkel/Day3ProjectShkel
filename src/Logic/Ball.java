@@ -5,13 +5,16 @@ public class Ball {
     private int weight;
     private Color color;
 
+    @SuppressWarnings("unused")
     public enum Color {
         RED,
         ORANGE,
         YELLOW,
         GREEN,
         BLUE,
-        VIOLET
+        VIOLET,
+        WHITE,
+        BLACK
     }
 
     public Ball(int weight, Color color) {
@@ -23,16 +26,8 @@ public class Ball {
         return color;
     }
 
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
     public int getWeight() {
         return weight;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
     }
 
     @Override
