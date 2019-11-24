@@ -32,7 +32,7 @@ public class Basket {
         return weight;
     }
 
-    public int getSpecificBallQuantity(Ball.Color specificColor){
+    public int getSpecificBallsQuantity(Ball.Color specificColor){
         int quantity = 0;
         for (int i = 0; i < currentPosition; i++) {
            if (basket[i].getColor() == specificColor) quantity++;
