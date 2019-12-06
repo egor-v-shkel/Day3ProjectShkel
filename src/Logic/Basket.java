@@ -12,7 +12,7 @@ public class Basket {
 
     public Basket(int size) {
         if (size > 0) basket = new Ball[size];
-        else throw new IllegalArgumentException();
+        else throw new IllegalArgumentException("Wrong basket size.");
     }
 
     public boolean putBall(Ball someBall){
